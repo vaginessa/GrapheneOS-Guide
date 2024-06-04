@@ -1,0 +1,269 @@
+<p><img src="https://github.com/Scrut1ny/GrapheneOS-Guide/assets/53458032/fd537eec-0144-47aa-9e72-4bd65eb3964c" alt="image-1313240240"></p>
+<h5 id="i-collaborated-with-naomi-brockwell-nbtv-https-www-youtube-com-naomibrockwelltv-to-craft-a-youtube-video-accompanying-this-guide-the-process-involved-significant-dedication-and-effort-resulting-in-the-creation-of-this-video-https-youtu-be-wg00qkcpoom-whether-you-stumbled-upon-it-from-the-youtube-video-discovered-it-by-chance-or-were-referred-by-a-friend-your-feedback-is-highly-valued-please-don-t-hesitate-to-propose-any-additions-or-improvements-to-this-guide-whether-it-s-links-configurations-apps-or-any-other-suggestions-i-welcome-your-input-your-recommendations-will-be-thoroughly-reviewed-and-i-ll-consider-their-integration-into-this-guide-">I collaborated with Naomi Brockwell <a href="https://www.youtube.com/@NaomiBrockwellTV">NBTV</a> to craft a YouTube video accompanying this guide. The process involved significant dedication and effort, resulting in the creation of <a href="https://youtu.be/wg00QkcpOOM">this video</a>. Whether you stumbled upon it from the YouTube video, discovered it by chance, or were referred by a friend, your feedback is highly valued. Please don&#39;t hesitate to propose any additions or improvements to this guide. Whether it&#39;s links, configurations, apps, or any other suggestions, I welcome your input. Your recommendations will be thoroughly reviewed, and I&#39;ll consider their integration into this guide.</h5>
+<h2 id="-purchasing">💵 Purchasing</h2>
+<details>
+<summary>Click to expand...</summary>
+
+- 📱 Mobile Phone
+  - Purchase a new <code>Google Pixel</code> with <code>cash</code> from a local store and avoid Verizon, as they lock the OEM.
+    - <em>Ensure the transaction remains anonymous to avoid linking the phone&#39;s IMEI to your identity.</em>
+
+- 📶 Mobile Carrier
+  - Buy a pre-paid <a href="https://www.mintmobile.com/">Mint Mobile</a> (T-Mobile) SIM card with <code>cash</code> from a local store.
+    - Wire it up to a <a href="https://privacy.com/">privacy.com</a> card.
+      - For $15/month<em>, it provides unlimited</em> 4G/5G domestic data with relatively little attributable information on the account (e.g., no name, address, SSN, etc.)
+  - <a href="https://calyxinstitute.org/membership/internet">Calyx hotspot</a> for unlimited, unthrottled, anonymous connectivity. 
+
+- 📳 Configuring Mobile Carrier
+  - Use a free public Wi-Fi network far from your home to configure your recently acquired mobile carrier.
+
+- 📲 Mobile Accessories (optional)
+  - Protective Case/Cover
+      - <a href="https://www.amazon.com/stores/page/1AEDD91F-AFDC-49AA-A7F4-2BF2A6AEBD57">Google Pixel</a>
+  - Privacy Screen Protector
+      - <a href="https://www.amazon.com/stores/page/EE20BD00-A914-460E-B3CC-12A13BB945E2/search?terms=Google%20Pixel">Google Pixel</a>
+
+</details>
+
+
+
+
+<h2 id="-unlocking-the-oem">🔓 Unlocking the OEM</h2>
+<details>
+<summary>Click to expand...</summary>
+
+1. Remove physical SIM card
+2. Factory reset (Settings &gt; System &gt; Reset options &gt; <code>Erase all data (factory reset)</code> ✅
+3. Setup Wi-Fi Connection (Settings &gt; Network &amp; internet &gt; Internet)
+4. Settings &gt; System &gt; Dev &gt; <code>Allow OEM unlocking</code> ✅
+
+</details>
+
+
+
+
+<h2 id="-install-google-usb-driver">⬇️ Install Google USB Driver</h2>
+<details>
+<summary>Click to expand...</summary>
+
+1. Download: <a href="https://dl.google.com/android/repository/usb_driver_r13-windows.zip">Link</a>
+2. Unzip &quot;usb_driver_r13-windows.zip&quot;
+3. <code>WIN + R</code> enter: <code>devmgmt.msc</code>
+4. Portable Devices &gt; Google Pixel
+5. Right click device &gt; <code>Properties</code> &gt; <code>Driver</code> &gt; <code>Update Driver</code> &gt; <code>Browse my computer for drivers</code> &gt; <code>Browse</code> &gt; Select <em>unzipped</em> &quot;usb_driver_r13-windows&quot; file once located.
+
+</details>
+
+
+
+
+<h2 id="-installation">⬇️ Installation</h2>
+<details>
+<summary>Click to expand...</summary>
+
+### Official Site &gt; <a href="https://grapheneos.org">https://grapheneos.org</a>
+- <a href="https://grapheneos.org/install/web">Web Install Guide</a>
+- <a href="https://grapheneos.org/install/cli">CLI Install Guide</a>
+
+### System is bricked, boot looping, corrupted, or showing critical errors
+- <a href="https://forum.xda-developers.com/t/guide-flashing-a-factory-image-with-fastboot-return-to-stock.1907796/">Fix Guide</a>
+
+</details>
+
+
+
+
+<h2 id="-settings">⚙️ Settings</h2>
+<details>
+<summary>Click to expand...</summary>
+
+#### Network &amp; internet
+<em> Settings &gt; Network &amp; internet &gt; Internet &gt; Carrier Settings ⚙️ &gt; Preferred network type &gt; <code>LTE only</code> ✅ (</em>if you don&#39;t have 5G<em>)
+</em> Settings &gt; Network &amp; internet &gt; Internet &gt; Carrier Settings ⚙️ &gt; <code>Allow 2G</code> ❌ (<em>if option exists</em>)
+<em> Settings &gt; Network &amp; internet &gt; Internet &gt; </em>Select your Wi-Fi<em> ⚙️ &gt; </em>select pen icon<em> &gt; Advanced options &gt; Privacy &gt; <code>Use per-connection randomized MAC (default)</code> ✅
+</em> Settings &gt; Network &amp; internet &gt; Private DNS &gt; Private DNS provider hostname: <code>dns.quad9.net</code> ✅
+<em> Settings &gt; Network &amp; internet &gt; Internet connectivity checks &gt; <code>Disabled</code> ❌
+  </em> <strong>IMPORTANT:</strong> <em>Make sure to enable again for captive portals used via public Wi-Fi!</em>
+
+#### Apps
+- Settings &gt; Apps &gt; Default apps (<em>Set your favorite default apps here</em>) ✅
+
+#### Battery
+- Settings &gt; Battery &gt; <code>Battery Percentage</code> ✅
+
+#### Sound &amp; vibration
+- Settings &gt; Sound &amp; vibration &gt; <code>Vibration &amp; haptics</code> ❌
+- Settings &gt; Sound &amp; vibration &gt; <code>Dial pad tones</code> ❌
+- Settings &gt; Sound &amp; vibration &gt; <code>Screen locking sound</code> ❌
+- Settings &gt; Sound &amp; vibration &gt; <code>Charging sounds and vibration</code> ❌
+- Settings &gt; Sound &amp; vibration &gt; <code>Touch sounds</code> ❌
+- Settings &gt; Sound &amp; vibration &gt; <code>Always show icon when in vibrate mode</code> ❌
+
+#### Display
+- Settings &gt; Display &gt; <code>Adaptive Brightness</code> ✅
+- Settings &gt; Display &gt; <code>Auto-rotate screen</code> ✅
+- Settings &gt; Display &gt; Lock Screen &gt; Privacy &gt; <code>Show sensitive content only when unlocked</code> ✅
+- Settings &gt; Display &gt; Lock Screen &gt; <code>Wake screen for notifications</code> ❌
+- Settings &gt; Display &gt; Screen timeout &gt; <code>1 minute</code> ✅
+- Settings &gt; Display &gt; <code>Dark Theme</code> ✅
+- Settings &gt; Display &gt; <code>Increase touch sensitivity</code> ✅ (If you have screen protector)
+
+#### Security
+- Settings &gt; Security &gt; Auto reboot &gt; <code>12 Hours</code> ✅
+- Settings &gt; Security &gt; <code>Scramble PIN input layout</code> ✅
+
+#### Privacy
+- Settings &gt; Privacy &gt; Permission manager &gt; Customize Everything! ✅
+  - Use <a href="https://reports.exodus-privacy.eu.org/">exodus-privacy</a> to assess if an app has excessive trackers or questionable permissions.
+
+#### System
+- Settings &gt; System &gt; Language &amp; Input &gt; on screen keyboard &gt; GraphineOS Keyboard &gt; Appearance &amp; Layouts &gt; Theme &gt; <code>Material Dark</code> ✅
+
+</details>
+
+
+
+
+<h2 id="-apps">🛍️ Apps</h2>
+<details>
+<summary>Click to expand...</summary>
+
+### FOSS Essential Apps
+- Web Browser
+  - <a href="https://f-droid.org/packages/us.spotco.fennec_dos/">Mull</a> - Privacy oriented web browser (FF Based)
+    - Add-ons
+      - <a href="https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/">uBlock Origin</a>
+      - <a href="https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/">Tampermonkey</a>
+        - User Scripts (JS)
+          - <a href="https://greasyfork.org/">Greasy Fork</a>
+            - <a href="https://greasyfork.org/scripts/423851-simple-youtube-age-restriction-bypass">Simple YouTube Age Restriction Bypass</a>
+- YouTube Alt
+  - <a href="https://github.com/libre-tube/LibreTube/releases/latest">LibreTube</a> - An alternative frontend for YouTube, for Android.
+  - <a href="https://github.com/TeamNewPipe/NewPipe/releases/latest">NewPipe</a> - A libre lightweight streaming front-end for Android. 
+- Movie/Show Streaming Alt
+  - <a href="https://github.com/recloudstream/cloudstream/releases/latest">CloudStream</a> - Android app for streaming and downloading media.
+    - <a href="https://rentry.org/cs3-repos#cloudstream-3-repositories">repos</a>
+- Music
+  - <a href="https://github.com/OxygenCobalt/Auxio/releases/latest">Auxio</a> - A simple, rational music player for Android
+  - <a href="https://github.com/z-huang/InnerTune/releases/latest">InnerTune</a> - A Material 3 YouTube Music client for Android
+- Photo/Video Gallery
+  - <a href="https://github.com/FossifyOrg/Gallery/releases/latest">Fossify Gallery</a> - A premium app for managing and editing your photos, videos, GIFs without ads
+- Notes
+  - <a href="https://github.com/FossifyOrg/Notes/releases/latest">Fossify Notes</a> - A simple textfield for adding quick notes without ads.
+- Secure Messaging
+  - <a href="https://signal.org/android/apk/">Signal</a> - A private messenger for Android. 
+  - <a href="https://github.com/oxen-io/session-android/releases/latest">Session</a> - A private messenger for Android.
+- Email Service
+  - <a href="https://github.com/ProtonMail/proton-mail-android/releases/latest">Proton Mail</a>
+  - <a href="https://f-droid.org/en/packages/de.tutao.tutanota/">Tuta</a>
+    - <a href="https://github.com/tutao/tutanota/releases">Github Link</a>
+- Navigation
+  - <a href="https://github.com/osmandapp/OsmAnd/releases/latest">OsmAnd</a> - Global Mobile Map Viewing &amp; Navigation for Offline and Online OSM Maps
+- Weather
+  - <a href="https://github.com/DarkMooNight/Rain/releases/latest">Rain</a> - Weather app.
+- Updates
+  - <a href="https://github.com/ImranR98/Obtainium/releases/latest">Obtainium</a> - Get Android App Updates Directly From the Source. 
+
+### App Stores
+- <a href="https://f-droid.org/">F-Droid</a> - The app store that respects freedom and privacy
+- <a href="https://github.com/accrescent/accrescent/releases/latest">accrescent</a> - A novel Android app store focused on security, privacy, and usability
+- <a href="https://f-droid.org/packages/com.aurora.store/">Aurora Store</a> - An open-source alternative to Google Play Store with privacy and modern design
+
+### F-Droid Apps
+- Web Browser
+  - <a href="https://f-droid.org/packages/us.spotco.fennec_dos/">Mull</a> - Privacy oriented web browser (FF Based)
+  - <a href="https://github.com/uazo/cromite/releases/latest">cromite</a> - Cromite a Bromite fork with ad blocking and privacy enhancements; take back your browser! 
+- Navigation
+  - <a href="https://f-droid.org/packages/app.organicmaps/">Organic Maps</a> - Open-source, community-driven maps for travelers, tourists, cyclists &amp; hikers
+  - <a href="https://f-droid.org/packages/net.osmand.plus/">OsmAnd~</a> - Global Mobile Map Viewing &amp; Navigation for Offline and Online OSM Maps
+- Weather
+  - <a href="https://github.com/DarkMooNight/Rain/releases/latest">Rain</a> - Weather app.
+  - <a href="https://github.com/breezy-weather/breezy-weather/releases/latest">Breezy Weather</a> - A Material Design Weather Application
+- Onlne Video, Music, Streaming, Podcasts, etc
+  - <a href="https://f-droid.org/packages/org.schabi.newpipe/">NewPipe</a> - Lightweight YouTube frontend
+  - <a href="https://github.com/libre-tube/LibreTube/releases/latest">LibreTube</a> - An alternative frontend for YouTube, for Android.
+  - <a href="https://f-droid.org/packages/it.vfsfitvnm.vimusic/">ViMusic</a> - Seamlessly stream music from YouTube Music
+  - <a href="https://github.com/z-huang/InnerTune/releases/latest">InnerTune</a> - A Material 3 YouTube Music client for Android
+  - <a href="https://github.com/KRTirtho/spotube/releases/latest">Spotube</a> - 🎧 Open source Spotify client that doesn&#39;t require Premium nor uses Electron! Available for both desktop &amp; mobile!
+  - <a href="https://f-droid.org/packages/org.y20k.transistor/">Transistor</a> - Transistor is an app for listening to radio stations over the internet.
+  - <a href="https://f-droid.org/packages/de.danoeh.antennapod/">AntennaPod</a> - Easy-to-use, flexible and open-source podcast manager and player
+  - <a href="https://f-droid.org/packages/com.podverse.fdroid/">Podverse</a> - Podcast app with clips, video, livestreams, playlists, profiles, and cross-platform
+- Social Media
+  - <a href="https://f-droid.org/en/packages/org.ca.squawker/">Squawker</a> - An open-source anonymous Twitter/X client
+  - <a href="https://f-droid.org/en/packages/ml.docilealligator.infinityforreddit/">Infinity for Reddit</a> - A beautiful, feature-rich Reddit client.
+  - <a href="https://f-droid.org/packages/org.joinmastodon.android/">Mastodon</a> - Decentralized social network
+  - <a href="https://f-droid.org/en/packages/org.nuclearfog.twidda/">Shitter</a> - A lightweight Mastodon client focused on privacy and low data consumption
+- Offline Media
+  - <a href="https://f-droid.org/packages/org.videolan.vlc/">VLC Media Player</a> - The best video and music player. Fast and “just works”, plays any file
+  - <a href="https://f-droid.org/packages/protect.videoeditor/">Video Transcoder</a> - Video transcoding between common formats
+  - <a href="https://f-droid.org/packages/com.standardnotes/">Standard Notes</a> - An end-to-end encrypted note-taking app for digitalists and professionals
+  - <a href="https://f-droid.org/packages/com.maxistar.textpad/">SimpleTextEditor</a> - Simple Text Editor
+- Messenger (Private, Secure, etc)
+  - <a href="https://f-droid.org/packages/org.briarproject.briar.android/">Brair</a> - Secure Messaging, Anywhere
+  - <a href="https://f-droid.org/packages/cx.ring/">Jami</a> - Audio &amp; Video Calls / Chat Take Control of your Communication!
+  - <a href="https://f-droid.org/en/packages/network.loki.messenger.fdroid/">Session F-Droid</a> - Encrypted private messenger
+- Email Service
+  - <a href="https://github.com/ProtonMail/proton-mail-android/releases/latest">Proton Mail</a>
+  - <a href="https://f-droid.org/en/packages/de.tutao.tutanota/">Tuta</a>
+  - <a href="https://github.com/tutao/tutanota/releases">Github Link</a>
+- VPNs
+  - <a href="https://f-droid.org/packages/net.mullvad.mullvadvpn/">Mullvad VPN</a> - Protect your online privacy with a fast, trustworthy, and easy-to-use VPN.
+  - <a href="https://f-droid.org/packages/net.ivpn.client/">IVPN</a> - Privacy focused VPN service with WireGuard
+  - <a href="https://f-droid.org/packages/org.calyxinstitute.vpn/">Calyx VPN</a> - Free VPN Service offered by The Calyx Institute
+  - <a href="https://f-droid.org/packages/ch.protonvpn.android/">ProtonVPN</a> - Free Swiss VPN with advanced security and privacy features.
+- App Control &amp; Container/Isolator
+  - <a href="https://f-droid.org/packages/eu.faircode.netguard/">NetGuard</a> - A simple way to block access to the internet per application
+  - <a href="https://f-droid.org/packages/com.oasisfeng.island.fdroid/">Insular</a> - Isolate your Big Brother apps
+- Misc. Apps
+  - <a href="https://f-droid.org/packages/com.emanuelef.remote_capture/">PCAPdroid</a> - No-root network monitor and traffic dump tool for Android devices
+  - <a href="https://f-droid.org/en/packages/com.junkfood.seal/">Seal</a> - 🦭 Video/audio downloader for Android (YT-DLP), designed with Material You 
+  - <a href="https://f-droid.org/packages/de.mathema.privacyblur/">PrivacyBlur</a> - Blur or pixelate faces or sensitive areas in pictures
+  - <a href="https://f-droid.org/packages/com.kunzisoft.keepass.libre/">KeePassDX</a> - Secure and open source password manager compatible with KeePass files.
+  - <a href="https://f-droid.org/packages/com.swordfish.lemuroid/">Lemuroid</a> - All in one emulator on Android
+  - <a href="https://f-droid.org/en/packages/ch.deletescape.lawnchair.plah/">Lawnchair</a> - Pixel Launcher features plus customizability
+  - <a href="https://f-droid.org/en/packages/net.guildem.publicip/">Public IP</a> - App and Widget allowing user to find its current public IP address
+  - <a href="https://f-droid.org/packages/me.hackerchick.catima/">Catima</a> - Catima, a Loyalty Card &amp; Ticket Manager for Android
+
+### Aurora Store Apps
+- Magic Earth
+  - <a href="https://play.google.com/store/apps/details?id=com.generalmagic.magicearth">Google Play Store</a>
+  - Direct Download: <a href="https://www.magicearth.com/apk/">https://www.magicearth.com/apk/</a> - Password: <code>7h6Q7\9AsF:a7&quot;Ja</code>
+- Tor Browser
+  - <a href="https://play.google.com/store/apps/details?id=org.torproject.torbrowser">Google Play Store</a>
+
+</details>
+
+
+
+
+<h2 id="personal-layout-design">Personal Layout Design</h2>
+<details>
+<summary>Click to expand...</summary>
+
+## Personal Current Phone Layout
+<img src="https://github.com/Scrut1ny/GrapheneOS-Guide/assets/53458032/48b8fe77-1c37-4e1c-afb9-6be1c2d23787" alt="image">
+
+- If you would like your system to look like mine, please check out these apps:
+  - <a href="https://github.com/jkuester/unlauncher/releases/latest">unlauncher</a> - Android minimalistic launcher
+    - <a href="https://f-droid.org/packages/com.jkuester.unlauncher/">F-Droid Link</a>
+  - <a href="https://github.com/Neamar/KISS/releases/latest">KISS</a> - Lightning fast, open-source, &lt; 250kb Android launcher
+  - My KISS Config
+  <code>{&quot;__v&quot;:183,&quot;freeze-history&quot;:true,&quot;history-hide&quot;:true,&quot;first-run-favorites&quot;:false,&quot;selected-search-provider-names&quot;:[&quot;DuckDuckGo&quot;],&quot;require-layout-update&quot;:false,&quot;gesture-up&quot;:&quot;display-apps&quot;,&quot;favorite-apps-list&quot;:&quot;app:\/\/us.spotco.fennec_dos\/us.spotco.fennec_dos.App;app:\/\/com.zionhuang.music\/com.zionhuang.music.MainActivity;app:\/\/org.thoughtcrime.securesms\/org.thoughtcrime.securesms.RoutingActivity;app:\/\/com.android.dialer\/com.android.dialer.main.impl.MainActivity;app:\/\/com.android.settings\/com.android.settings.Settings;&quot;,&quot;enable-app-history&quot;:false,&quot;available-search-providers&quot;:[&quot;DuckDuckGo|https:\/\/start.duckduckgo.com\/?q=%s&quot;],&quot;enable-search&quot;:false,&quot;large-search-bar&quot;:true,&quot;transparent-search&quot;:true,&quot;subicon-visible&quot;:false,&quot;pref-toggle-tags-list&quot;:[&quot;call&quot;,&quot;clock&quot;,&quot;message&quot;,&quot;people&quot;,&quot;messaging&quot;],&quot;excluded-apps&quot;:[&quot;fr.neamar.kiss\/fr.neamar.kiss.MainActivity&quot;],&quot;default-search-provider&quot;:&quot;DuckDuckGo&quot;,&quot;theme&quot;:&quot;transparent-dark&quot;,&quot;pref-hide-circle&quot;:true,&quot;first-run-shortcuts&quot;:false,&quot;exclude-favorites-history&quot;:false,&quot;deleting-search-providers-names&quot;:[&quot;Google&quot;,&quot;Google Maps&quot;,&quot;Google Play Store&quot;,&quot;YouTube&quot;,&quot;Ecosia&quot;,&quot;Bing&quot;],&quot;force-adaptive&quot;:false,&quot;icons-pack&quot;:&quot;com.donnnno.arcticons&quot;,&quot;pref-hide-search-bar-hint&quot;:true,&quot;__tags&quot;:{&quot;app:\/\/com.android.dialer\/com.android.dialer.main.impl.MainActivity&quot;:&quot;dial call phone&quot;,&quot;app:\/\/com.android.contacts\/com.android.contacts.activities.PeopleActivity&quot;:&quot;contacts people relations&quot;,&quot;app:\/\/org.chromium.chrome\/com.google.android.apps.chrome.Main&quot;:&quot;internet web browser&quot;,&quot;app:\/\/com.android.deskclock\/com.android.deskclock.DeskClock&quot;:&quot;clock alarm timer stopwatch&quot;,&quot;app:\/\/us.spotco.fennec_dos\/org.mozilla.fenix.IntentReceiverActivity&quot;:&quot;internet web browser&quot;,&quot;app:\/\/com.android.deskclock\/com.android.deskclock.HandleApiCalls&quot;:&quot;clock alarm timer stopwatch&quot;,&quot;app:\/\/com.android.messaging\/com.android.messaging.ui.conversationlist.ConversationListActivity&quot;:&quot;text message compose sms mms messaging&quot;}}</code>
+
+- Arcticons
+  - <a href="https://f-droid.org/packages/com.donnnno.arcticons/">Arcticons Dark</a> - A monotone line-based icon pack
+  - <a href="https://f-droid.org/packages/com.donnnno.arcticons.light/">Arcticons Light</a> - A monotone line-based icon pack
+  - <a href="https://f-droid.org/packages/com.donnnno.arcticons.you/">Arcticons You</a> - A Material You line-based icon pack
+
+</details>
+
+
+
+
+<h2 id="other-awesome-guides">Other Awesome Guides</h2>
+<ul>
+<li><a href="https://alternativeto.net/list/35462/grapheneos-appverse/">https://alternativeto.net/list/35462/grapheneos-appverse/</a></li>
+<li><a href="https://www.devilreef.net/securing-a-personal-android-phone/">https://www.devilreef.net/securing-a-personal-android-phone/</a></li>
+<li><a href="https://redandblack.io/blog/2020/how-to-set-up-grapheneos/">https://redandblack.io/blog/2020/how-to-set-up-grapheneos/</a></li>
+<li><a href="https://craignuzzo.tech/articles/graphene">https://craignuzzo.tech/articles/graphene</a></li>
+</ul>
